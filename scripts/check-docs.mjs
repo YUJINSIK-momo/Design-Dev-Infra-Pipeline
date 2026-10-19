@@ -14,6 +14,7 @@ const rules = [
   { name: "Slack 채널 · 워크스페이스 · 앱 ID", pattern: /\b[CTAUG]0[0-9A-Z]{8,}\b/ },
   { name: "Tailscale 사설망 주소", pattern: /\.ts\.net\b/ },
   { name: "액세스 키 모양", pattern: /\b(?:AKIA|ASIA)[0-9A-Z]{16}\b/ },
+  { name: "회사 서비스 이름 · 도메인(「상권 프로젝트」로 쓴다)", pattern: /blue[\s_-]?maps|블루맵스/i },
 ]
 
 function walk(dir) {
