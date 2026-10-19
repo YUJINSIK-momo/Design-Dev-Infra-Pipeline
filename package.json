@@ -1,0 +1,15 @@
+{
+  "name": "design-dev-infra-pipeline",
+  "private": true,
+  "type": "module",
+  "description": "디자인 → 개발 → 리뷰 → 배포를 잇는 AI 하네스 사용 설명서",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "check": "node scripts/check-docs.mjs && vitepress build docs"
+  },
+  "devDependencies": {
+    "vitepress": "1.6.4"
+  }
+}

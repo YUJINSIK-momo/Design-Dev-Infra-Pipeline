@@ -1,0 +1,50 @@
+/*
+ * yuyu 토큰을 VitePress 기본 테마 변수에 묶는다.
+ * 포트폴리오(Backend-Developer-Portfolio)의 src/styles/yuyu-tokens.css 와 같은 이름 · 같은 값을 쓴다.
+ */
+:root {
+  --yuyu-brand: 46 108 240;
+  --yuyu-brand-soft: 77 140 255;
+  --yuyu-ai: 124 92 230;
+  --yuyu-infra: 13 148 136;
+  --yuyu-warning: 217 119 6;
+  --yuyu-font-sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+
+  --vp-font-family-base: var(--yuyu-font-sans);
+  --vp-c-brand-1: rgb(var(--yuyu-brand));
+  --vp-c-brand-2: rgb(var(--yuyu-brand-soft));
+  --vp-c-brand-3: rgb(var(--yuyu-brand));
+  --vp-c-brand-soft: rgb(var(--yuyu-brand) / 0.14);
+  --vp-c-tip-1: rgb(var(--yuyu-infra));
+  --vp-c-tip-soft: rgb(var(--yuyu-infra) / 0.14);
+  --vp-c-warning-1: rgb(var(--yuyu-warning));
+  --vp-c-warning-soft: rgb(var(--yuyu-warning) / 0.14);
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, rgb(var(--yuyu-brand)) 20%, rgb(var(--yuyu-ai)));
+}
+
+.dark {
+  --yuyu-brand: 77 140 255;
+  --yuyu-brand-soft: 120 168 255;
+  --yuyu-ai: 167 139 250;
+  --yuyu-infra: 45 212 191;
+  --yuyu-warning: 251 191 36;
+  --vp-c-bg: rgb(9 13 26);
+  --vp-c-bg-alt: rgb(14 20 40);
+  --vp-c-bg-soft: rgb(20 28 54);
+}
+
+.vp-doc {
+  word-break: keep-all;
+}
+
+/* 사람 결정 단계 표시 */
+.vp-doc .human {
+  display: inline-block;
+  padding: 0 0.45em;
+  border: 1px dashed rgb(var(--yuyu-warning));
+  border-radius: 999px;
+  color: rgb(var(--yuyu-warning));
+  font-size: 0.8em;
+  font-weight: 600;
+}
